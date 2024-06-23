@@ -37,7 +37,7 @@ function Intro() {
         </div>
         <p
           className="font-medium text-gray-200 tracking-wide leading-7"
-        >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
         <div className="flex font-light text-xl gap-6 flex-wrap">
           <button className="self-start rounded-xl p-2 hover:-translate-y-px transition duration-300 hover:bg-white-trans"
