@@ -20,7 +20,7 @@ function Home() {
            text-white rounded-xl hover:border-white hover:-translate-y-px font-semibold z-10 "
         >
           <Icon path={mdiLaptop} size={1}/>
-          See what we have to offer =>
+          See what we have to offer =&gt;
         </button>
       </div>
       <div className="z-10">
