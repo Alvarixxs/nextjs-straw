@@ -3,6 +3,25 @@ import Link from "next/link";
 import { mdiLogin, mdiMenu, mdiFileDocumentOutline} from '@mdi/js';
 import Logo from "@/app/ui/home/Logo";
 
+const linkTags = [
+  {
+    label: "Showcase",
+    href: "/home"
+  },
+  {
+    label: "Docs",
+    href: "/home"
+  },
+  {
+    label: "Blogs",
+    href: "/home"
+  },
+  {
+    label: "Get started",
+    href: "/home"
+  },
+]
+
 interface NavigationProps {
   menuOpen: boolean;
   toggleMenu: () => void;
@@ -10,7 +29,7 @@ interface NavigationProps {
 
 function Navigation(props : NavigationProps) {
   return (
-    <header className="border-b border-white-trans">
+    <header className="border-b border-white-trans sticky top-0 z-20 bg-header-back backdrop-blur-sm py-1 md:py-2 px-6">
       <div className="hidden lg:block">
         <NavDesktop />
       </div>
@@ -23,27 +42,21 @@ function Navigation(props : NavigationProps) {
 
 function NavDesktop() {
   return (
-    <div className="py-1 px-6 flex items-center justify-center gap-10">
+    <div className="flex items-center justify-center gap-10">
       <Logo />
       <nav className="flex gap-10 text-neutral-400 text-sm">
-        <Link href="/home" className="hover:text-white transition flex items-center">Showcase</Link>
-        <Link href="/home" className="hover:text-white transition flex items-center">Docs</Link>
-        <Link href="/home" className="hover:text-white transition flex items-center">Blog</Link>
-        <Link href="/home" className="hover:text-white transition flex items-center">Get started</Link>
+        {linkTags.map((item, index) => (
+          <Link key={item.label}  href={item.href} className="hover:text-white transition flex items-center">{item.label}</Link>
+        ))}
       </nav>
       <div className="flex ml-16 gap-6">
-        <input placeholder="Search documentation..."
-               className="py-1 px-2 bg-neutral-900 rounded text-xs max-w-96 hidden xl:block"/>
+        <input placeholder="Search documentation..." className="py-1 px-2 bg-neutral-900 rounded text-xs max-w-96 hidden xl:block"/>
         <input placeholder="Search..." className="py-1 px-2 bg-neutral-900 rounded text-xs max-w-20 block xl:hidden"/>
-        <button
-          className="flex gap-2 items-center border border-white-trans px-8 transition rounded hover:bg-white-trans py-1"
-        >
+        <button className="flex gap-2 items-center border border-white-trans px-8 transition rounded hover:bg-white-trans py-1 bg-black">
           <p className="text-white font-semibold text-sm">Learn</p>
           <Icon path={mdiFileDocumentOutline} size={0.8}/>
         </button>
-        <button
-          className="flex gap-2 items-center border bg-white px-8 py-1 transition rounded hover:opacity-90"
-        >
+        <button className="flex gap-2 items-center border bg-white px-8 py-1 transition rounded hover:opacity-90">
           <p className="text-black font-medium text-sm">Login</p>
           <Icon path={mdiLogin} size={0.8} className="text-black"/>
         </button>
