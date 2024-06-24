@@ -29,7 +29,7 @@ interface NavigationProps {
 
 function Navigation(props : NavigationProps) {
   return (
-    <header className="border-b border-white-trans sticky top-0 z-20 bg-header-back backdrop-blur-sm py-1 md:py-2 px-6">
+    <header className="border-b border-white-trans sticky top-0 z-20 bg-header-back backdrop-blur-sm py-2 px-6">
       <div className="hidden lg:block">
         <NavDesktop />
       </div>
@@ -68,7 +68,7 @@ function NavDesktop() {
 function NavMobile({menuOpen, toggleMenu}: NavigationProps) {
   return (
     <div className="flex">
-      <div className="flex-grow flex items-center px-6 py-2">
+      <div className="flex-grow flex items-center">
         <Logo/>
       </div>
       <button className="flex-grow flex items-center justify-end px-6 py-2" onClick={toggleMenu}>
