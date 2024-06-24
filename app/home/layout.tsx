@@ -2,7 +2,7 @@
 
 import Navigation from "@/app/ui/home/Navigation";
 import {useState} from "react";
-import MobileMenu from "@/app/ui/home/MobileMenu";
+import MenuMobile from "@/app/ui/home/MenuMobile";
 import Footer from "@/app/ui/home/Footer";
 
 export default function Layout({
@@ -16,7 +16,7 @@ export default function Layout({
     <main>
       <Navigation menuOpen={mobileMenuOpen} toggleMenu={()=>{setMobileMenuOpen(!mobileMenuOpen)}}/>
       {mobileMenuOpen ? (
-        <MobileMenu />
+        <MenuMobile />
       ) : (
         <div>
           {children}

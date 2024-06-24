@@ -96,12 +96,12 @@ const content = [
 
 function Footer() {
   return (
-    <footer className="flex justify-center gap-10 md:gap-16 px-6 py-20 flex-wrap border-t border-white-trans">
+    <footer className="flex justify-center gap-10 md:gap-16 px-6 py-20 flex-wrap border-t dark:border-white-trans border-black-trans bg-neutral-200 dark:bg-black">
       <div className="flex flex-row xl:flex-col gap-6">
         <Logo />
-        <div className="flex gap-2 justify-center items-center text-neutral-400">
-          <Link href="/home" className="hover:text-white transition"><GitHubIcon /></Link>
-          <Link href="/home" className="hover:text-white transition"><XIcon /></Link>
+        <div className="flex gap-2 justify-center items-center dark:text-neutral-400 text-neutral-700">
+          <Link href="/home" className="dark:hover:text-white transition hover:text-black"><GitHubIcon /></Link>
+          <Link href="/home" className="dark:hover:text-white transition hover:text-black"><XIcon /></Link>
         </div>
       </div>
       <div className="flex md:flex-row flex-col gap-10 md:gap-16 justify-center items-start text-sm">
@@ -113,7 +113,7 @@ function Footer() {
                 <Link
                   key={item.text}
                   href={item.href}
-                  className="text-neutral-400 hover:text-white transition md:border-none border-r border-r-white-trans pr-3"
+                  className="dark:text-neutral-400 text-neutral-700 dark:hover:text-white hover:text-black transition md:border-none border-r border-r-white-trans pr-3"
                 >
                   {item.text}
                 </Link>)
@@ -123,12 +123,15 @@ function Footer() {
         )}
         <div className="flex flex-col gap-3">
           <p className="font-semibold">Subscribe to our newsletter</p>
-          <p className="text-neutral-400 max-w-xs">Get regular updates on our featured products and regular information
+          <p className="dark:text-neutral-400  text-neutral-700 max-w-xs">Get regular updates on our featured products and regular information
             on any bug updates</p>
-          <input placeholder="Search documentation..."
-                 className="py-1 px-2 bg-neutral-900 rounded text-sm max-w-xs"/>
-          <button className="self-start border border-white-trans px-8 transition rounded hover:border-white py-1">
-            <p className="text-white text-sm">Subscribe</p>
+          <input placeholder="Enter email address..."
+                 className="py-1 px-2 dark:bg-neutral-700 bg-neutral-300 border-black-trans rounded text-sm max-w-xs"/>
+          <button
+            className="self-start border dark:border-white-trans border-black-trans px-8 transition
+            rounded dark:hover:border-white hover:border-black py-1 dark:text-white text-neutral-700 dark:hover:text-white hover:text-black"
+          >
+            <p className="text-sm">Subscribe</p>
           </button>
         </div>
       </div>

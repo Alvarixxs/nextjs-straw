@@ -29,7 +29,7 @@ const data = [
 
 function Questions() {
   return (
-    <section className="flex flex-col items-center justify-center px-6 py-20 gap-6">
+    <section className="flex flex-col items-center justify-center px-6 py-20 gap-6 bg-neutral-200 dark:bg-black">
       <h1
         className="bg-clip-text text-transparent bg-gradient-to-r from-dark-blue via-dark-pink to-dark-purple text-5xl font-bold p-6">
         Frequently asked questions.
@@ -47,9 +47,9 @@ function Questions() {
               <Icon path={item.path} size={1.5} className="group-hover:text-blue-950"/>
               <p>{item.header}</p>
             </div>}
-            className="border-white-trans border-b max-w-4xl min-w-min"
+            className="dark:border-white-trans border-black-trans border-b max-w-4xl min-w-min"
           >
-            <p className="text-neutral-400">{item.content}</p>
+            <p className="dark:text-neutral-400 text-neutral-700">{item.content}</p>
           </AccordionItem>
         ))}
       </Accordion>

@@ -29,7 +29,7 @@ const linkTags = [
 function Intro() {
   return (
     <section
-      className="min-h-screen bg-waves-pattern bg-center bg-no-repeat md:bg-contain bg-cover flex items-center
+      className="min-h-screen dark:bg-waves-pattern-black bg-waves-pattern-white bg-center bg-no-repeat bg-cover flex items-center
       justify-center px-6 py-20 gap-6 flex-col-reverse md:flex-row z-10"
     >
       <Image
@@ -56,7 +56,7 @@ function Intro() {
           <Link href="https://vercel.com/" target="_blank"><Image src={Vercel} alt="" width={40} height={40} /></Link>
         </div>
         <p
-          className="font-medium text-gray-200 tracking-wide leading-7"
+          className="dark:text-neutral-200 tracking-wide leading-7"
         >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
         <div className="flex font-light text-xl gap-6 flex-wrap">

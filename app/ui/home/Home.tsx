@@ -2,39 +2,57 @@ import Image from "next/image";
 import Back from "@/public/bg/ccchaos.svg";
 import Icon from "@mdi/react";
 import {mdiLaptop} from "@mdi/js";
-import MacFront from "@/public/resources/MacFront.png";
-import MacBack from "@/public/resources/MacBack.png";
+import MacFrontWhite from "@/public/resources/MacFrontWhite.png";
+import MacBackWhite from "@/public/resources/MacBackWhite.png";
+import MacFrontDark from "@/public/resources/MacFrontBlack.png";
+import MacBackDark from "@/public/resources/MacBackBlack.png";
+
 
 function Home() {
   return (
     <section
-      className="flex flex-col min-h-screen md:flex-row items-center justify-center bg-black relative px-6 py-20 overflow-hidden"
+      className="flex flex-col min-h-screen md:flex-row items-center justify-center relative px-6 py-20 overflow-hidden bg-neutral-200 dark:bg-black"
     >
       <Image src={Back} alt="" className="absolute animate-spin-slow z-10"/>
       <div className="flex-col flex gap-10 max-w-2xl lg:flex">
         <p className="font-black text-6xl animate-appear-from-below">Say hello to a world of innovative design</p>
         <p className="font-thin text-3xl animate-appear-from-below">We strive for the <b>best</b> possible outcome for your firm.</p>
         <button
-          className="flex gap-2 self-start border border-white-trans py-2 px-4 transition
-          duration-500 rounded-xl hover:border-white hover:-translate-y-px z-10 relative"
+          className="flex gap-2 self-start border dark:border-white-trans py-2 px-4 transition
+          duration-500 rounded-xl dark:hover:border-white hover:-translate-y-px z-10 relative border-black-trans hover:border-black"
         >
           <Icon path={mdiLaptop} size={1}/>
-          <p className="text-white text-base font-semibold">See what we have to offer =&gt;</p>
+          <p className="dark:text-white text-base font-semibold">See what we have to offer =&gt;</p>
         </button>
       </div>
       <div className="z-10">
         <Image
-          src={MacFront}
+          src={MacFrontWhite}
           alt=""
           width={400}
           height={400}
+          className="hidden dark:block"
         />
         <Image
-          src={MacBack}
+          src={MacBackWhite}
           alt=""
           width={400}
           height={400}
-          className="hidden md:block"
+          className="hidden dark:md:block"
+        />
+        <Image
+          src={MacFrontDark}
+          alt=""
+          width={400}
+          height={400}
+          className="dark:hidden"
+        />
+        <Image
+          src={MacBackDark}
+          alt=""
+          width={400}
+          height={400}
+          className="dark:hidden hidden md:block"
         />
       </div>
     </section>

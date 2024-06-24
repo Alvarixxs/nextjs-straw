@@ -11,12 +11,14 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        'waves-pattern': "url('/bg/stacked-waves-haikei.svg')",
+        'waves-pattern-black': "url('/bg/stacked-waves-haikei-black.svg')",
+        'waves-pattern-white': "url('/bg/stacked-waves-haikei-white.svg')",
         'dark-gradient': 'linear-gradient(135deg, #8B008B, #4B0082, #00008B)',
       },
       colors: {
         "mac-purple": "#322741",
         'white-trans': "rgb(255,255,255,0.2)",
+        'black-trans': 'rgb(0,0,0,0.2)',
         'dark-pink': '#8B008B',    // DarkMagenta
         'dark-purple': '#4B0082',  // Indigo
         'dark-blue': '#00008B',    // DarkBlue

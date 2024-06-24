@@ -31,9 +31,9 @@ const menuItems = [
   },
 ]
 
-function MobileMenu() {
+function MenuMobile() {
   return (
-    <section className="flex flex-col gap-6 text-neutral-400 text-md p-6">
+    <section className="flex flex-col gap-6 dark:text-neutral-400 text-neutral-600 text-md p-6 min-h-screen">
       {menuItems.map((item) => (
         <Link key={item.label} href={item.href} className="hover:text-white transition flex items-center">{item.label}</Link>
       ))}
@@ -41,4 +41,4 @@ function MobileMenu() {
   )
 }
 
-export default MobileMenu;
+export default MenuMobile;

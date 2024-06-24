@@ -29,7 +29,7 @@ interface NavigationProps {
 
 function Navigation(props : NavigationProps) {
   return (
-    <header className="border-b border-white-trans sticky top-0 z-20 bg-header-back backdrop-blur-sm py-2 px-6">
+    <header className="border-b dark:border-white-trans sticky top-0 z-20 dark:bg-header-back bg-white backdrop-blur-sm py-2 px-6 border-black-trans">
       <div className="hidden lg:block">
         <NavDesktop />
       </div>
@@ -44,19 +44,19 @@ function NavDesktop() {
   return (
     <div className="flex items-center justify-center gap-10">
       <Logo />
-      <nav className="flex gap-10 text-neutral-400 text-sm">
+      <nav className="flex gap-10 dark:text-neutral-400 text-neutral-700 text-sm">
         {linkTags.map((item, index) => (
-          <Link key={item.label}  href={item.href} className="hover:text-white transition flex items-center">{item.label}</Link>
+          <Link key={item.label}  href={item.href} className="dark:hover:text-white hover:text-black transition flex items-center">{item.label}</Link>
         ))}
       </nav>
       <div className="flex ml-16 gap-6">
-        <input placeholder="Search documentation..." className="py-1 px-2 bg-neutral-900 rounded text-xs max-w-96 hidden xl:block"/>
-        <input placeholder="Search..." className="py-1 px-2 bg-neutral-900 rounded text-xs max-w-20 block xl:hidden"/>
-        <button className="flex gap-2 items-center border border-white-trans px-8 transition rounded hover:bg-white-trans py-1 bg-black">
+        <input placeholder="Search documentation..." className="py-1 px-2 dark:bg-neutral-700 bg-neutral-200 rounded text-xs max-w-96 hidden xl:block"/>
+        <input placeholder="Search..." className="py-1 px-2 dark:bg-neutral-700 bg-neutral-200 rounded text-xs max-w-20 block xl:hidden"/>
+        <button className="flex gap-2 items-center border border-white-trans px-8 transition rounded dark:hover:bg-white-trans py-1 bg-black hover:opacity-80">
           <p className="text-white font-semibold text-sm">Learn</p>
-          <Icon path={mdiFileDocumentOutline} size={0.8}/>
+          <Icon path={mdiFileDocumentOutline} size={0.8} className="text-white"/>
         </button>
-        <button className="flex gap-2 items-center border bg-white px-8 py-1 transition rounded hover:opacity-90">
+        <button className="flex gap-2 items-center border px-8 py-1 transition rounded hover:bg-neutral-200 bg-white">
           <p className="text-black font-medium text-sm">Login</p>
           <Icon path={mdiLogin} size={0.8} className="text-black"/>
         </button>
