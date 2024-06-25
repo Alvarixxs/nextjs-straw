@@ -2,10 +2,10 @@ import Image from "next/image";
 import Back from "@/public/bg/ccchaos.svg";
 import Icon from "@mdi/react";
 import {mdiLaptop} from "@mdi/js";
-import MacFrontWhite from "@/public/resources/MacFrontWhite.png";
-import MacBackWhite from "@/public/resources/MacBackWhite.png";
-import MacFrontDark from "@/public/resources/MacFrontBlack.png";
-import MacBackDark from "@/public/resources/MacBackBlack.png";
+import MacFrontWhite from "@/public/resources/mac/MacFrontWhite.png";
+import MacBackWhite from "@/public/resources/mac/MacBackWhite.png";
+import MacFrontDark from "@/public/resources/mac/MacFrontBlack.png";
+import MacBackDark from "../../../public/resources/mac/MacBackBlack.png";
 
 
 function Home() {

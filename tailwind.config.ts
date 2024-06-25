@@ -32,12 +32,17 @@ const config: Config = {
         'spin-slow': 'spin 700s linear infinite',
         'spin-medium': 'spin 30s linear infinite',
         'appear-from-below': 'appearFromBelow 2s ease-out',
+        'translate-x': 'translateX 1s linear infinite'
       },
       keyframes: {
         appearFromBelow: {
           '0%': { transform: 'translateY(50%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        translateX: {
+          '0%': { transform: 'translateX(0)',},
+          '100%': { transform: 'translateX(-5px)' },
+        }
       },
     },
   },

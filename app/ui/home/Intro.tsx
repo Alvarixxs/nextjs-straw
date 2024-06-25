@@ -1,30 +1,13 @@
 import Image from "next/image";
 import Selection from "../../../public/resources/selection.svg"
+import Analytics from "../../../public/resources/analytics.svg"
+import Report from "../../../public/resources/report.svg"
 import Nextjs from "../../../public/icons/Next.js.svg"
 import Reakt from "../../../public/icons/React.svg"
 import Js from "../../../public/icons/JavaScript.svg"
 import Tailwind from "../../../public/icons/Tailwind CSS.svg"
 import Vercel from "../../../public/icons/Vercel.svg"
 import Link from "next/link";
-
-const linkTags = [
-  {
-    label: "Learn.",
-    href: "/",
-  },
-  {
-    label: "Reference.",
-    href: "/",
-  },
-  {
-    label: "Community.",
-    href: "/",
-  },
-  {
-    label: "Blog.",
-    href: "/",
-  },
-]
 
 function Intro() {
   return (
@@ -33,18 +16,10 @@ function Intro() {
       justify-center px-6 py-20 gap-6 flex-col-reverse md:flex-row z-10"
     >
       <Image
-        src={Selection}
+        src={Report}
         alt=""
         width={400}
         height={400}
-        className="block md:hidden"
-      />
-      <Image
-        src={Selection}
-        alt=""
-        width={500}
-        height={500}
-        className="hidden md:block"
       />
       <div className="flex flex-col max-w-3xl gap-6 backdrop-blur-md p-6">
         <h1 className="font-bold text-5xl">Skyrocket your business to the <em className="font-thin">next</em> level</h1>
@@ -72,3 +47,22 @@ function Intro() {
 }
 
 export default Intro
+
+const linkTags = [
+  {
+    label: "Learn.",
+    href: "/",
+  },
+  {
+    label: "Reference.",
+    href: "/",
+  },
+  {
+    label: "Community.",
+    href: "/",
+  },
+  {
+    label: "Blog.",
+    href: "/",
+  },
+]

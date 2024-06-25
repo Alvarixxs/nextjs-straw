@@ -3,25 +3,6 @@ import Link from "next/link";
 import { mdiLogin, mdiMenu, mdiFileDocumentOutline} from '@mdi/js';
 import Logo from "@/app/ui/home/Logo";
 
-const linkTags = [
-  {
-    label: "Showcase",
-    href: "/home"
-  },
-  {
-    label: "Docs",
-    href: "/home"
-  },
-  {
-    label: "Blogs",
-    href: "/home"
-  },
-  {
-    label: "Get started",
-    href: "/home"
-  },
-]
-
 interface NavigationProps {
   menuOpen: boolean;
   toggleMenu: () => void;
@@ -79,3 +60,23 @@ function NavMobile({menuOpen, toggleMenu}: NavigationProps) {
 }
 
 export default Navigation
+
+
+const linkTags = [
+  {
+    label: "Showcase",
+    href: "/home"
+  },
+  {
+    label: "Docs",
+    href: "/home"
+  },
+  {
+    label: "Blogs",
+    href: "/home"
+  },
+  {
+    label: "Get started",
+    href: "/home"
+  },
+]

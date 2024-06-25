@@ -1,6 +1,6 @@
 import Home from "@/app/ui/home/Home";
 import Intro from "@/app/ui/home/Intro";
-import Questions from "@/app/ui/home/Questions";
+import Features from "@/app/ui/home/Features";
 import Reviews from "@/app/ui/home/Reviews";
 
 export default function Page() {
@@ -8,7 +8,7 @@ export default function Page() {
     <main>
       <Home />
       <Intro />
-      <Questions />
+      <Features />
       <Reviews />
     </main>
   );
