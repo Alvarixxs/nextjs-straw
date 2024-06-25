@@ -11,7 +11,7 @@ import MacBackDark from "../../../public/resources/mac/MacBackBlack.png";
 function Home() {
   return (
     <section
-      className="flex flex-col min-h-screen md:flex-row items-center justify-center relative px-6 py-20 overflow-hidden bg-neutral-200 dark:bg-black"
+      className="flex flex-col md:flex-row items-center justify-center relative px-6 py-20 overflow-hidden bg-neutral-200 dark:bg-black"
     >
       <Image src={Back} alt="" className="absolute animate-spin-slow z-10"/>
       <div className="flex-col flex gap-10 max-w-2xl lg:flex">

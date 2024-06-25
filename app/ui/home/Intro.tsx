@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Selection from "../../../public/resources/selection.svg"
-import Analytics from "../../../public/resources/analytics.svg"
 import Report from "../../../public/resources/report.svg"
 import Nextjs from "../../../public/icons/Next.js.svg"
 import Reakt from "../../../public/icons/React.svg"

@@ -64,23 +64,23 @@ function Reviews() {
         </div>
         <button
           className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-neutral-100 dark:from-black to-transparent
-          md:p-10 p-6 h-full w-32 md:w-96 flex items-center justify-start"
+          md:p-10 p-6 h-full w-32 md:w-96 flex items-center justify-start group"
           onClick={shiftLeft}>
           <Icon
             path={mdiArrowLeft}
             size={1}
-            className="transition duration-1000"
+            className="transition duration-1000 group-hover:scale-150"
             style={{opacity: offset-(CARD_SIZE+GAP_SIZE) < 0 ? '0' : '1'}}
           />
         </button>
         <button
           className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-neutral-100 dark:from-black to-transparent
-          md:p-10 p-6 h-full w-32 md:w-96 flex items-center justify-end"
+          md:p-10 p-6 h-full w-32 md:w-96 flex items-center justify-end group"
           onClick={shiftRight}>
           <Icon
             path={mdiArrowRight}
             size={1}
-            className="transition duration-1000"
+            className="transition duration-1000 group-hover:scale-150"
             style={{opacity: offset+(CARD_SIZE+GAP_SIZE) >= (CARD_SIZE+GAP_SIZE)*reviews.length ? '0' : '1'}}
           />
         </button>
