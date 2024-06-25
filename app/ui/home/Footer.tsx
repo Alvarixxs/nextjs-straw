@@ -113,7 +113,8 @@ function Footer() {
                 <Link
                   key={item.text}
                   href={item.href}
-                  className="dark:text-neutral-400 text-neutral-700 dark:hover:text-white hover:text-black transition md:border-none border-r border-r-white-trans pr-3"
+                  className="dark:text-neutral-400 text-neutral-700 dark:hover:text-white hover:text-black transition md:border-none
+                  border-r dark:border-r-white-trans border-r-black-trans pr-3"
                 >
                   {item.text}
                 </Link>)
