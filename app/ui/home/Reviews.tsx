@@ -64,7 +64,7 @@ function Reviews() {
         </div>
         <button
           className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-neutral-100 dark:from-black to-transparent
-          p-4 h-full w-32 md:w-96 flex items-center justify-start"
+          md:p-10 p-6 h-full w-32 md:w-96 flex items-center justify-start"
           onClick={shiftLeft}>
           <Icon
             path={mdiArrowLeft}
@@ -75,7 +75,7 @@ function Reviews() {
         </button>
         <button
           className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-neutral-100 dark:from-black to-transparent
-          p-4 h-full w-32 md:w-96 flex items-center justify-end"
+          md:p-10 p-6 h-full w-32 md:w-96 flex items-center justify-end"
           onClick={shiftRight}>
           <Icon
             path={mdiArrowRight}
