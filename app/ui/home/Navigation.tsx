@@ -52,7 +52,7 @@ function NavMobile({menuOpen, toggleMenu}: NavigationProps) {
       <div className="flex-grow flex items-center">
         <Logo/>
       </div>
-      <button className="flex-grow flex items-center justify-end py-2" onClick={toggleMenu}>
+      <button className="flex-grow flex items-center justify-end" onClick={toggleMenu}>
         <Icon path={mdiMenu} size={1} className={`${menuOpen ? 'rotate-90': ''} transition`}/>
       </button>
     </div>
