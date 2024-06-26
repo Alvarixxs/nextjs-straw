@@ -32,7 +32,8 @@ const config: Config = {
         'spin-slow': 'spin 700s linear infinite',
         'spin-medium': 'spin 30s linear infinite',
         'appear-from-below': 'appearFromBelow 2s ease-out',
-        'translate-x': 'translateX 1s linear infinite'
+        'translate-x': 'translateX 1s linear infinite',
+        'scrollLeft': 'scrollLeft 30s linear infinite',
       },
       keyframes: {
         appearFromBelow: {
@@ -42,6 +43,9 @@ const config: Config = {
         translateX: {
           '0%': { transform: 'translateX(0)',},
           '100%': { transform: 'translateX(-5px)' },
+        },
+        scrollLeft: {
+          '100%': {left: '-240px'}
         }
       },
     },

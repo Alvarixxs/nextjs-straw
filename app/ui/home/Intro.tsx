@@ -19,8 +19,13 @@ function Intro() {
         width={400}
         height={400}
       />
-      <div className="flex flex-col max-w-3xl gap-6 backdrop-blur-md p-6">
-        <h1 className="font-bold text-5xl">Skyrocket your business to the <em className="font-thin">next</em> level</h1>
+      <div className="flex flex-col max-w-3xl gap-6 backdrop-blur-md p-6 ">
+        <h1
+          className="font-bold text-5xl md:text-black bg-clip-text text-transparent bg-gradient-to-r
+          from-dark-blue via-dark-pink to-dark-purple dark:md:text-white"
+        >
+          Skyrocket your business to the <em className="font-thin">next</em> level
+        </h1>
         <div className="flex justify-between items-center p-6 border-y border-white-trans">
           <Link href="https://www.javascript.com/" target="_blank"><Image src={Js} alt="" width={40} height={40} /></Link>
           <Link href="https://react.dev/" target="_blank"><Image src={Reakt} alt="" width={40} height={40} className="animate-spin-medium"/></Link>

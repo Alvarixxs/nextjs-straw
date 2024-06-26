@@ -1,7 +1,7 @@
 import Icon from '@mdi/react';
 import Link from "next/link";
 import { mdiLogin, mdiMenu, mdiFileDocumentOutline} from '@mdi/js';
-import Logo from "@/app/ui/home/Logo";
+import Logo from "@/app/ui/utils/Logo";
 
 interface NavigationProps {
   menuOpen: boolean;

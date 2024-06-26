@@ -1,4 +1,4 @@
-import Logo from "@/app/ui/home/Logo";
+import Logo from "@/app/ui/utils/Logo";
 import Link from "next/link";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import XIcon from '@mui/icons-material/X';

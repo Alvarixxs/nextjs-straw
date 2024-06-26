@@ -3,7 +3,6 @@
 import Icon from '@mdi/react';
 import { mdiAccount, mdiStar, mdiArrowLeft, mdiArrowRight } from '@mdi/js';
 import {useState} from "react";
-import {display} from "@mui/system";
 
 const CARD_SIZE = 240 // pixels
 const GAP_SIZE = 24
