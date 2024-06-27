@@ -10,4 +10,4 @@ The website uses next, typescript and tailwind css.
 
 ## Deploy on Vercel
 
-https://nextjs-straw-ebzf3ofu8-alvarixxs-projects.vercel.app/home
+https://nextjs-straw.vercel.app/
