@@ -65,18 +65,18 @@ export default Navigation
 const linkTags = [
   {
     label: "Showcase",
-    href: "/home"
+    href: "/(default)"
   },
   {
     label: "Docs",
-    href: "/home"
+    href: "/(default)"
   },
   {
     label: "Blogs",
-    href: "/home"
+    href: "/(default)"
   },
   {
     label: "Get started",
-    href: "/home"
+    href: "/(default)"
   },
 ]

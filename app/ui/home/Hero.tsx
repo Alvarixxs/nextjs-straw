@@ -7,7 +7,7 @@ import MacBackWhite from "@/public/resources/mac/MacBackWhite.png";
 import MacFrontDark from "@/public/resources/mac/MacFrontBlack.png";
 import MacBackDark from "../../../public/resources/mac/MacBackBlack.png";
 
-function Home() {
+function Hero() {
   return (
     <section
       className="flex flex-col md:flex-row items-center justify-center relative px-6 py-20 overflow-hidden bg-neutral-200 dark:bg-black"
@@ -67,4 +67,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Hero

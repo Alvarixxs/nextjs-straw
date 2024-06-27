@@ -1,4 +1,4 @@
-import Home from "@/app/ui/home/Home";
+import Hero from "@/app/ui/home/Hero";
 import Intro from "@/app/ui/home/Intro";
 import Features from "@/app/ui/home/Features";
 import Reviews from "@/app/ui/home/Reviews";
@@ -6,7 +6,7 @@ import Reviews from "@/app/ui/home/Reviews";
 export default function Page() {
   return (
     <main>
-      <Home />
+      <Hero />
       <Intro />
       <Features />
       <Reviews />

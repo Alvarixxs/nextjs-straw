@@ -57,27 +57,27 @@ const content = [
     sub: [
       {
         text: 'Docs',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Learn',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Showcase',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Blog',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Analytics',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Preview',
-        href: '/home'
+        href: '/(default)'
       }
     ]
   },
@@ -86,23 +86,23 @@ const content = [
     sub: [
       {
         text: 'Commerce',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Contact sales',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Github',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Releases',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Governance',
-        href: '/home'
+        href: '/(default)'
       },
     ]
   },
@@ -111,19 +111,19 @@ const content = [
     sub: [
       {
         text: 'Open source software',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Similar work',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Github',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'X',
-        href: '/home'
+        href: '/(default)'
       },
     ]
   },
@@ -132,11 +132,11 @@ const content = [
     sub: [
       {
         text: 'Privacy policy',
-        href: '/home'
+        href: '/(default)'
       },
       {
         text: 'Judge',
-        href: '/home'
+        href: '/(default)'
       },
     ]
   },
